@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Computers</title>
+        <script>
+            function func(){
+                alert("✅The item added to your list successfully.")
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="container">  
+            <div class="content">
+                <h2>Personal Computers</h2>
+                <a href="index.html">
+                    <button>Back To Home Page</button>
+                </a>
+            </div>
+
+            <div class="laptop">
+                <div class="laptop-1">
+                    <img src="assets/laptop-1.png" alt="Asus - Laptop">
+                    <h5>ASUS TUF Gaming A15</h5>
+                    <p>Price: $255.7</p>
+                    <ul>
+                        <li>Brand: ASUS</li>
+                        <li>Color: Black</li>
+                        <li>NVIDIA® GeForce RTX™ 2060, 6GB</li>
+                        <li>AMD Ryzen™ 7 4800H</li>
+                        <li>15.6-inch, FHD</li>
+                        <li>16GB RAM</li>
+                        <li>1TB M.2 SSD</li>
+                        <li>Operating System: Windows 11</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+    
+                <div class="laptop-2">
+                    <img src="assets/laptop-2.png" alt="Lenovo - Laptop">
+                    <h5>Lenovo Legion 5 Pro</h5>
+                    <p>Price: $255.7</p>
+                    <ul>
+                        <li>Brand: Lenovo</li>
+                        <li>Color: White</li>
+                        <li>NVIDIA® GeForce RTX™ 3050, 4GB</li>
+                        <li>Intel Core i7-11800H</li>
+                        <li>16-inch, FHD, IPS 165Hz</li>
+                        <li>16GB RAM</li>
+                        <li>1TB SSD</li>
+                        <li>Operating System: Windows 11</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+    
+                <div class="laptop-3">
+                    <img src="assets/laptop-3.png" alt="Asus - Laptop">
+                    <h5>ASUS ROG Strix G16</h5>
+                    <p>Price: $1559</p>
+                    <ul>
+                        <li>Brand: ASUS</li>
+                        <li>Color: Black</li>
+                        <li>NVIDIA® GeForce RTX™ 4060, 8GB</li>
+                        <li>Intel Core i7-13650HX</li>
+                        <li>16-inch, FHD, IPS 165Hz</li>
+                        <li>16GB RAM</li>
+                        <li>1TB SSD</li>
+                        <li>Operating System: Windows 11</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+            </div> 
+        </div>
+    </body>
+    <style>
+
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;  
+    min-height: 140vh;
+    background-image: url("/assets/landing3-edited.jpg");
+    opacity: 0.3px;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start body */
+
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+}
+.content h2 {
+    font-family:'Trebuchet MS';
+    font-size: 32PX;
+}
+.content button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(246, 98, 7);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+.content a button {
+    text-decoration: none;
+    color: white;
+}
+.content button:hover {
+    background-color: rgb(213, 89, 12);
+}
+.laptop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.laptop  img {
+    padding-bottom: 30px;
+}
+.laptop-1 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 20px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.laptop-1 img {
+    width: 269px;
+    margin-left: 48px;
+    margin-top: 30px;
+}
+.laptop-1 h5 {
+    width: 100%;
+    padding: 10px 77px 40px;
+    font-size: 18px;
+}
+.laptop-1 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.laptop-1 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.laptop-1 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.laptop-1 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+.laptop-2 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 20px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.laptop-2 img {
+    width: 265px;
+    margin-left: 45px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.laptop-2 h5 {
+    width: 100%;
+    padding: 50px 85px 50px;
+    margin-top: -50px;
+    font-size: 18px;
+}
+.laptop-2 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.laptop-2 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.laptop-2 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.laptop-2 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+.laptop-3 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 42px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.laptop-3 img {
+    width: 270px;
+    margin-left: 49px;
+    margin-top: 30px;
+}
+.laptop-3 h5 {
+    width: 100%;
+    padding: 10px 89px 40px;
+    font-size: 18px;
+}
+.laptop-3 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.laptop-3 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.laptop-3 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.laptop-3 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+    </style>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Phones</title>
+        <script>
+            function func(){
+                alert("✅The item added to your list successfully.")
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="container">  
+            <div class="content">
+                <h2>Smart Phones</h2>
+                <a href="index.html">
+                    <button>Back To Home Page</button>
+                </a>
+            </div>
+
+            <div class="phone">
+                <div class="phone-1">
+                    <img src="assets/phone-1.png" alt="Galaxy S24 - Smartphone">
+                    <h5>Galaxy S24 Ultra</h5>
+                    <p>Price: $1,299</p>
+                    <ul>
+                        <li>Brand: SAMSUNG</li>
+                        <li>Color: Titanium Gray</li>
+                        <li>Snapdragon 8 Gen 3</li>
+                        <li>256GB | 12GB RAM</li>
+                        <li>Front 12MP <br/>
+                            Quadruple background 200+50+10+12 MP</li>
+                        <li>6.8 inch Quad HD+</li>
+                        <li>Android 14</li>
+                        <li>5000 mAH</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+    
+                <div class="phone-2">
+                    <img src="assets/phone-2.png" alt="Oneplus - Smartphone">
+                    <h5>OnePlus 12R</h5>
+                    <p>Price: $499.99</p>
+                    <ul>
+                        <li>Brand: Oneplus</li>
+                        <li>Color: Black</li>
+                        <li>Snapdragon 8 Gen 2</li>
+                        <li>512GB | 16GB RAM</li>
+                        <li>Front 16MP <br/>
+                            Quadruple background 50+32+8 MP</li>
+                        <li>6.74 inch FHD+</li>
+                        <li>Android 13</li>
+                        <li>5500 mAH</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+    
+                <div class="phone-3">
+                    <img src="assets/phone-3.png" alt="Pixel - Smartphone">
+                    <h5>Google Pixel 7 Pro</h5>
+                    <p>Price: $899.99</p>
+                    <ul>
+                        <li>Brand: Google</li>
+                        <li>Color: White</li>
+                        <li>Tensor Gen 2</li>
+                        <li>256GB | 8GB RAM</li>
+                        <li>Front 10.8MP <br/>
+                            Quadruple background 50+12 MP</li>
+                        <li>6.3 inch FHD+</li>
+                        <li>Android 13</li>
+                        <li>4355 mAH</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+            </div> 
+        </div>
+    </body>
+    <style>
+
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;  
+    min-height: 150vh;
+    background-image: url("/assets/landing3-edited.jpg");
+    opacity: 0.3px;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start body */
+
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+}
+.content h2 {
+    font-family:'Trebuchet MS';
+    font-size: 32PX;
+}
+.content button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(246, 98, 7);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+.content a button {
+    text-decoration: none;
+    color: white;
+}
+.content button:hover {
+    background-color: rgb(213, 89, 12);
+}
+.phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone  img {
+    padding-bottom: 30px;
+}
+.phone-1 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 20px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.phone-1 img {
+    width: 260px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.phone-1 h5 {
+    width: 100%;
+    padding: 10px 100px 40px;
+    font-size: 18px;
+}
+.phone-1 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.phone-1 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.phone-1 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.phone-1 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+.phone-2 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 20px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.phone-2 img {
+    width: 223px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.phone-2 h5 {
+    width: 100%;
+    padding: 10px 115px 40px;
+    font-size: 18px;
+}
+.phone-2 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.phone-2 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.phone-2 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.phone-2 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+.phone-3 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 20px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.phone-3 img {
+    width: 210px;
+    margin-left: 72px;
+    margin-top: 30px;
+}
+.phone-3 h5 {
+    width: 100%;
+    padding: 10px 95px 40px;
+    font-size: 18px;
+}
+.phone-3 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.phone-3 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.phone-3 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.phone-3 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+    </style>
+</html>

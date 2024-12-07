@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tasawq: online shopping</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/logo.png" />
+        <script>
+            function fun(){
+                alert("✅your message has been sent.")
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Start Header -->
+        <header>
+            <div class="container">
+                <a href="#Home" class="logo">
+                  <img src="assets/logo.png" alt="Logo">
+                  <h5>TaSawq</h5>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="#Home">Home</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Vision">Vision and Mission</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Services -->
+        <services id = "Services">
+            <div class="container2">
+                <service>
+                    <ul id = "type">
+                        <li><a href="personal-computers.html">Personal Computers</a></li>
+                        <li><a href="smart-phones.html">Smart Phones</a></li>
+                        <li><a href="hardware-accessories.html">Hardware Accessories</a></li>
+                        <li><a href="application-software.html">Application Software</a></li>
+                        <li><a href="system-software.html">System Software</a></li>
+                    </ul>
+                </service>
+            </div>
+        </services>
+        <!-- End Services -->
+        <!-- Start Vision and Mission Section -->
+        <vision-and-mission id = "Vision">
+            <div class="landing">
+                <div class="overlay"></div>
+                <div class="text">
+                    <div class="content">
+                        <h2>
+                            <span>Hello Everyone!</span><br />
+                            We are <span>TaSawq :)<br/>online shopping website</span> for displaying and selling products
+                          </h2>
+                        <p>This website aims to facilitate the user's life by providing him with access to many 
+                           products that he uses or aspires to in the future</p>
+                    </div>
+                </div>  
+            </div>
+        </vision-and-mission>
+        <!-- End Vision and Mission Section -->
+        <!-- Start About --> 
+        <about id = "About">
+            <div class="landing2">
+                <div class="text2">
+                    <div class="content2">
+                        <h2> Who We Us! </h2>
+                        <p>This website is produced by TechArt technology company. <br/>
+                            Our company has been established since 2005 and has developed and established many branches in the Middle East, Egypt, Morocco, the West, Canada and Greece, <br/>
+                            But the company's main branch in Canada. <br/>
+                            This website was launched on the eighteenth of November 2024.
+                        </p>
+                </div>  
+            </div>
+        </about>
+        <!-- End About -->
+        <!-- Start Contact -->
+        <contact id = "Contact">
+            <p><b>CONTACT WITH US</b></p>
+            <div class="container3">
+                <a href="https://github.com/Seif-Eldin-Ahmed" target="_blank">
+                    <img class="git" src="Assets/github.png">
+                </a>
+                <a href="https://www.behance.net/seifeldinamaty" target="_blank">
+                    <img class="be" src="Assets/behance.png">
+                </a>
+                <a href="https://www.facebook.com/seif.amaty?mibextid=ZbWKwL" target="_blank">
+                    <img class="face" src="Assets/facebook.png">
+                </a>
+                <a href="https://www.instagram.com/_seif_3maty_/" target="_blank">
+                    <img class="insta" src="Assets/instagram.png">
+                </a>
+            </div>
+            <div class="container3-2">
+                <form action="">
+                    <div class="NE-container">
+                        <input type="text" class="name" id="name" placeholder="Enter your name" required>       
+                        <input type="email" class="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="m-container">
+                        <input type="text" class="message" id="message" placeholder="Please enter your message" required>
+                        <button onclick="fun()">send</button>
+                    </div>
+                </form>
+            </div>
+        </contact>
+        <!-- End Contact -->
+    </body>
+</html>

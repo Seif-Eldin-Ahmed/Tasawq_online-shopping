@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>System Software</title>
+        <script>
+            function func(){
+                alert("✅The item added to your list successfully.")
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="container">  
+            <div class="content">
+                <h2>System Software</h2>
+                <a href="index.html">
+                    <button>Back To Home Page</button>
+                </a>
+            </div>
+
+            <div class="system">
+                <div class="system-1">
+                    <img src="assets/system-1.png" alt="Windows 10 Pro - System Software">
+                    <h5>Windows 10 Pro</h5>
+                    <p>Price: $119.99</p>
+                    <ul>
+                        <li>Developer: Microsoft</li>
+                        <li>Type: Operating System</li>
+                        <li>Model: Version 24H2</li>
+                        <li>release: November 12, 2024</li>
+                        <li>Size: 22GB</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+    
+                <div class="system-2">
+                    <img src="assets/system-2.png" alt="Linux - System Software">
+                    <h5>Linux</h5>
+                    <p>Price: $97.45</p>
+                    <ul>
+                        <li>Developer: Linus Torvalds</li>
+                        <li>Type: Operating System</li>
+                        <li>Model: Dreamlinux</li>
+                        <li>release: May 17, 2023</li>
+                        <li>Size: 17GB</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+    
+                <div class="system-3">
+                    <img src="assets/system-3.png" alt="Mac OS - System Software">
+                    <h5>Mac OS X</h5>
+                    <p>Price: $176.50</p>
+                    <ul>
+                        <li>Developer: Apple</li>
+                        <li>Type: Operating System</li>
+                        <li>Model: Version Mac OS X 10.0 Cheetah</li>
+                        <li>release: October 28, 2024</li>
+                        <li>Size: 46GB</li>
+                    </ul>
+                    <button onclick="func()">Buy</button>
+                </div>
+            </div> 
+        </div>
+    </body>
+    <style>
+
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;  
+    min-height: 140vh;
+    background-image: url("/assets/landing3-edited.jpg");
+    opacity: 0.3px;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start body */
+
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+}
+.content h2 {
+    font-family:'Trebuchet MS';
+    font-size: 32PX;
+}
+.content button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(246, 98, 7);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+.content a button {
+    text-decoration: none;
+    color: white;
+}
+.content button:hover {
+    background-color: rgb(213, 89, 12);
+}
+.system {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.system img {
+    padding-bottom: 30px;
+}
+.system-1 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 20px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.system-1 img {
+    width: 186px;
+    margin-left: 85px;
+    margin-top: 30px;
+}
+.system-1 h5 {
+    width: 100%;
+    padding: 10px 109px 40px;
+    font-size: 18px;
+}
+.system-1 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.system-1 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.system-1 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.system-1 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+.system-2 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 20px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.system-2 img {
+    width: 155px;
+    margin-left: 102px;
+    margin-top: 30px;
+}
+.system-2 h5 {
+    width: 100%;
+    padding: 10px 155px 40px;
+    font-size: 18px;
+}
+.system-2 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.system-2 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.system-2 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.system-2 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+.system-3 {
+    width: 35%;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 17px;
+    padding: 20px 10px 90px;
+    margin-top: 50px;
+    background-color: rgba(236, 236, 236, 0.870);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.system-3 img {
+    width: 211px;
+    margin-left: 72px;
+    margin-top: 30px;
+}
+.system-3 h5 {
+    width: 100%;
+    padding: 10px 137px 40px;
+    font-size: 18px;
+}
+.system-3 p {
+    width: fit-content;
+    padding: 12px 20px 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: hidden;
+    border-radius: 7px;
+    background-color: rgb(254, 142, 90);
+    color: white;
+}
+.system-3 ul li {
+    width: 100%;
+    padding: 2px 10px;
+    margin-left: 40px;
+}
+.system-3 button {
+    width: 25%;
+    padding: 15px;
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 112, 45);
+    border-radius: 12px; 
+    font-size: 15.5px;
+    font-weight: bold;
+    color: rgb(255, 112, 45);  
+    cursor: pointer;
+}
+.system-3 button:hover {
+    color: white;
+    background-color: rgb(255, 112, 45);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+    </style>
+</html>
